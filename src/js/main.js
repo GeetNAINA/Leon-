@@ -3,6 +3,9 @@ function openNav() {
   document.querySelector(".nav").style.width = "100%";
 }
 
+// $( ".header__bar" ).click(function() {
+//   document.querySelector(".nav").style.width = "100%";
+// });
 
 // function openNav(x) {
 //   if (x.matches) { // If media query matches

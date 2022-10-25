@@ -5,13 +5,14 @@
         max-height: 100%;
 
         img {
+            width: 100%;
             max-height: 100%;
             min-width: 100%;
             object-fit: cover;
             max-width: 100%;
 
             @include media-breakpoint-up(lg) {
-                height: 550px;
+                height: 735px;
             }
 
         }
@@ -19,9 +20,15 @@
 
     .container {
         position: absolute;
-        top: 160px;
+        top: 130px;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include media-breakpoint-up(lg) {
+        top: 255px;
+
+        }
+
     }
 
     &__content {
@@ -38,7 +45,7 @@
 
         @include media-breakpoint-up(lg) {
             font-size: 55px;
-            line-height: 120px;
+            line-height: 205px;
         }
     }
 
