@@ -7,8 +7,14 @@
 @import '../custom-bootstrap/functions';
 @import '../custom-bootstrap/variables';
 @import '../custom-bootstrap/mixins';
+@import '../custom-bootstrap/reboot';
+@import '../custom-bootstrap/navbar';
+@import '../custom-bootstrap/bootstrap-grid.scss';
+@import '../custom-bootstrap/card';
+@import '../custom-bootstrap/buttons';
 @import 'helpers/responsive';
 @import 'helpers/generated-sprite';
+
 
 /* Base */
 @import 'base/form';
@@ -18,6 +24,12 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animations';
+@import 'base/font';
+@import 'base/icomoon';
+@import 'base/color';
+
+
+
 
 
 /* Components */
@@ -31,7 +43,24 @@
 @import 'components/display';
 
 
+/* block */
+@import 'block/banner';
+@import 'block/branding';
+@import 'block/work';
+@import 'block/service';
+@import 'block/about';
+@import 'block/contact';
+@import 'block/portfolio';
+@import 'block/description';
+@import 'block/content';
+
+
+
+
+
+
 /* Layout */
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
+@import 'layout/navigation';

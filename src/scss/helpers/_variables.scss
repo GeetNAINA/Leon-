@@ -1,10 +1,24 @@
 $colors: (
   white: #ffffff,
   black: #000000,
-  red: #ff0000
+  red: #ff0000,
+  turquoise: #10cab7,
+  grey: #2c4755,
+  heading: #ebeced,
+  subtitle: #575757,
+  bar: #24484f,
+  nav-heading: #637988,
+  off-white: #fafafa, 
+  blacky: #1f2021, 
+  blue: #344452,
+  off-grey: #334752,
+  greyish: #4d4c4c,
+  shadow: #ebebeb,
+  line: #30d1c1 
+  
 );
 
-$size: ( 
+$size: (
   input-btn-radius: 35px,
   textarea-btn-radius: 10px
 );
@@ -19,12 +33,33 @@ $font-weight: (
   extra-bold: 800
 );
 
- 
+
 $input-btn-radius: map-get($size, input-btn-radius);
 $textarea-btn-radius: map-get($size, textarea-btn-radius);
 
 $white: map-get($colors, white);
 $black: map-get($colors, black);
 $red: map-get($colors, red);
+$turquoise: map-get($colors, turquoise);
+$grey: map-get($colors, grey);
+$heading: map-get($colors, heading);
+$bar: map-get($colors, bar);
+$nav-heading: map-get($colors, nav-heading);
+$subtitle: map-get($colors, subtitle);
+$off-white: map-get($colors, off-white);
+$blacky: map-get($colors, blacky);
+$greyish: map-get($colors, greyish);
+$off-grey: map-get($colors, off-grey);
+$blue: map-get($colors, blue);
+$shadow: map-get($colors, shadow);
+$line: map-get($colors, line);
+
+
+
 
 $regular: map-get($font-weight, regular);
+$extra-bold: map-get($font-weight, extra-bold );
+
+
+$Work-Sans: 'Work Sans ExtraBold';
+$Work-Sans-Regular: 'Work Sans';

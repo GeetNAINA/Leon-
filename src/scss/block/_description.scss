@@ -1,0 +1,33 @@
+.description {
+    padding: 60px 0;
+
+    &__text {
+        margin: 20px 0;
+        max-width: 594px;
+        
+        }
+
+}
+
+
+
+.box {
+    &__content {
+        margin-bottom: 30px;
+    }
+
+    &__shadow {
+        max-height: 315px;
+        padding: 40px;
+        box-shadow: 0px 5px 15px 0 $shadow;
+    }
+
+    &__header {
+        font-family: $Work-Sans;
+        color: $off-grey;
+    }
+
+    &__para {
+        color: $subtitle;
+    }
+}

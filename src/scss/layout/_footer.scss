@@ -1,3 +1,14 @@
 .footer {
+    height: 100px;
+    background-color: #344452;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
+    .footer__text {
+        font-size: 15px;
+        line-height: 15px;
+        color: $white;
+        font-family: $Work-Sans;
+    }
 }

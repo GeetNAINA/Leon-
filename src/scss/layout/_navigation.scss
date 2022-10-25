@@ -1,0 +1,85 @@
+.nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: $grey;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+
+    .container {
+        height: 100%;
+    }
+
+    &__content {
+        height: 100%;
+        padding-top: 30px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .closebtn {
+            font-size: 35px;
+            line-height: 35px;
+            color: $white;
+        }
+    }
+
+    &__list {
+        min-height: 85%;
+        margin-bottom: 450px;
+
+        .menu {
+            margin-bottom: 30px;
+        }
+
+        .touch {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__link {
+        color: $white;
+        font-size: 29px;
+        line-height: 39px;
+
+        &:hover {
+            color: $turquoise;
+        }
+    }
+
+    &__link1 {
+        color: $white;
+        font-size: 21px;
+        line-height: 35px;
+
+
+        &:hover {
+            color: $turquoise;
+        }
+    }
+
+    &__heading {
+        font-size: 21px;
+        line-height: 50px;
+        color: $nav-heading;
+    }
+
+    &__copyright {
+        font-size: 15px;
+        line-height: 15px;
+        color: $nav-heading;
+        padding: 10px 0 40px 0;
+
+    }
+
+    .active {
+        color: $turquoise;
+    }
+}
+

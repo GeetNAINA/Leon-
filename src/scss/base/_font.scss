@@ -1,0 +1,93 @@
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+.font-style {
+    font-size: 15px;
+    line-height: 15px;
+    color: $grey;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+.style-social {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 15px;
+}
+
+.font-heading {
+    font-size: 50px;
+    line-height: 50px;
+    color: $heading;
+    font-family: $Work-Sans;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 161.87px;
+        line-height: 161.87px;
+    }
+}
+
+.font-para {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45px;
+    left: 50%;
+    color: $subtitle;
+
+    @include media-breakpoint-up(lg) {
+        top: 135px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
+
+.content-heading {
+    font-size: 20px;
+    color: $blacky;
+    font-family: $Work-Sans;
+}
+
+.content-desc {
+    font-size: 10px;
+    line-height: 10px;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 15px;
+        line-height: 25px;   
+    }
+}
+
+.font-desc {
+  font-size: 15px;
+  line-height: 15px;
+    color: $off-grey;
+    font-family: $Work-Sans;
+    @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.separator {
+    width: 200px;
+    height: 2px;
+    background-color: $turquoise;
+    margin: 50px 0 15px 0;
+
+}
+
+.work-shadow-active {
+    box-shadow: 0px 5px 15px 0 $shadow;
+}

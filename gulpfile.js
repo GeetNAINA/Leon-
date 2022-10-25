@@ -18,15 +18,16 @@ var uglify 	= require('gulp-uglify');
 
 /*** All directories ***/
 const dirs = {
-    root: '.',
-    src: 'web/themes/custom/project-name-theme/src',
-    dist: 'web/themes/custom/project-name-theme/dist'
+  root: '.',
+  src: 'src',
+  dist: 'dist'
 }
+
 
 const scss_paths = {
     src: `${dirs.src}/scss/`,
     dist: `${dirs.dist}/css/`,
-    files: `${dirs.src}/scss/main.min.scss`
+    files: `${dirs.src}/scss/main.scss`
 }
 
 const js_paths = {

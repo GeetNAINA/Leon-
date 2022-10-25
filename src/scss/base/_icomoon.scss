@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?peqzw');
+  src:  url('../fonts/icomoon.eot?peqzw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?peqzw') format('truetype'),
+    url('../fonts/icomoon.woff?peqzw') format('woff'),
+    url('../fonts/icomoon.svg?peqzw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basketball:before {
+  content: "\e906";
+}
+.icon-lamp:before {
+  content: "\e903";
+}
+.icon-beaker:before {
+  content: "\e909";
+}
+.icon-globe1:before {
+  content: "\e904";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-google:before {
+  content: "\e905";
+}
+.icon-desktop_windows:before {
+  content: "\e907";
+}
+.icon-chat_bubble_outline:before {
+  content: "\e900";
+}
+.icon-web_asset:before {
+  content: "\e901";
+}
+.icon-printer:before {
+  content: "\e902";
+}
+.icon-lab:before {
+  content: "\10cab7";
+}

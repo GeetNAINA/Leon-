@@ -1,0 +1,30 @@
+.content {
+
+    &__all {
+        margin-bottom: 50px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 110px;
+
+        }
+    }
+    &__text {
+        max-width: 430px;
+        margin: 20px auto;
+
+        @include media-breakpoint-up(lg) {
+        margin: 110px auto;
+
+        }
+    }
+
+    picture {
+        max-width: 100%;
+        img {
+            max-width: 570px;
+            height:360px;
+        }
+    }
+}
+
+
