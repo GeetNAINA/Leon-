@@ -15,7 +15,7 @@
     }
 
     &__subtitle {
-        top: 110px;
+        top: 75px;
 
         @include media-breakpoint-up(lg) {
             top: 200px;
@@ -41,7 +41,7 @@
             font-family: $Work-Sans;
             color: $turquoise;
             font-size: 15px;
-            line-height: 15px;
+            line-height: 30px;
 
             @include media-breakpoint-up(lg) {
                 padding: 20px;
@@ -62,7 +62,7 @@
 
         &__title {
             font-size: 15px;
-            line-height: 15px;
+            line-height: 30px;
             color: $off-grey;
         }
 
