@@ -1,4 +1,3 @@
-
 function openNav() {
   document.querySelector(".nav").style.width = "100%";
 }
@@ -46,6 +45,7 @@ let loadMoreBtn = document.querySelector('.btn__loadmore');
 let currentItem = 3;
 
 loadMoreBtn.onclick = () => {
+  event.preventDefault()
   let boxes = [...document.querySelectorAll('.portfolio__card')];
   for (var i = currentItem; i < currentItem + 3; i++) {
     boxes[i].style.display = 'inline-block';
