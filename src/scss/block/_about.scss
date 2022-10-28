@@ -47,13 +47,13 @@
 
     &__content {
         .about-img-col {
-            width: 475px;
+            // width: 475px;
             margin: 40px 0;
 
-            @include media-breakpoint-up(lg) {
-                width: auto;
+            // @include media-breakpoint-up(lg) {
+            //     // width: auto;
 
-            }
+            // }
         }
 
     }
@@ -61,7 +61,7 @@
     &__box {
         picture {
             position: relative;
-            max-width: 100%;
+            max-height: 100%;
 
 
             &:before {

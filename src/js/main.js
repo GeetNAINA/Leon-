@@ -77,7 +77,7 @@ loadMoreBtn.onclick = () => {
   }
 }
 
-// new WOW().init();
+new WOW().init();
 
 // wow = new WOW(
 //   {
