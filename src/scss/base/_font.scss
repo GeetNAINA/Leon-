@@ -65,20 +65,10 @@
 
     @include media-breakpoint-up(lg) {
         font-size: 15px;
-        line-height: 25px;   
+        line-height: 27px;   
     }
 }
 
-.font-desc {
-  font-size: 15px;
-  line-height: 15px;
-    color: $off-grey;
-    font-family: $Work-Sans;
-    @include media-breakpoint-up(lg) {
-        font-size: 20px;
-        line-height: 30px;
-    }
-}
 
 .separator {
     width: 200px;

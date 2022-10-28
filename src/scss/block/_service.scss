@@ -1,5 +1,6 @@
 .service {
     padding-bottom: 60px;
+    overflow: hidden;
 
     &__header {
         margin-bottom: 40px;
@@ -12,7 +13,7 @@
     &__text {
         // width: 364px;
         display: flex;
-        height: 220px;
+        height: 100px;
         max-height: 100%;
         // max-width: 305px;
 

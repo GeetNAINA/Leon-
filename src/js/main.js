@@ -1,6 +1,22 @@
-function openNav() {
-  document.querySelector(".nav").style.width = "100%";
-}
+// function openNav() {
+//   document.querySelector(".nav").style.width = "100%";
+// }
+
+
+$(document).ready(function () {
+  $(".header__bar").click(function () {
+    $("body").toggleClass("showing");
+  });
+
+  $(".closebtn").click(function () {
+    $("body").removeClass("showing");
+  });
+ });
+
+// $(document).ready(function () {
+//   $(".header__bar").click(function () {
+//     $("body").toggleClass("shows");
+//   });
 
 // $( ".header__bar" ).click(function() {
 //   document.querySelector(".nav").style.width = "100%";
@@ -30,15 +46,19 @@ function openNav() {
 // }
 
 
-function closeNav() {
-  document.querySelector(".nav").style.width = "0";
-}
+// function closeNav() {
+//   document.querySelector(".showing").style.width = "0";
+// }
 
 
 window.addEventListener("scroll", function () {
   var nav = document.querySelector(".header");
   nav.classList.toggle("sticky", window.scrollY > 0);
 });
+
+
+
+
 
 
 let loadMoreBtn = document.querySelector('.btn__loadmore');
@@ -56,3 +76,16 @@ loadMoreBtn.onclick = () => {
     loadMoreBtn.style.display = 'none';
   }
 }
+
+// new WOW().init();
+
+// wow = new WOW(
+//   {
+//   boxClass:     'wow',      // default
+//   animateClass: 'animated', // default
+//   offset:       0,          // default
+//   mobile:       true,       // default
+//   live:         true        // default
+// }
+// )
+// wow.init();

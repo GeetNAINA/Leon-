@@ -1,11 +1,15 @@
 .about {
     padding: 30px 0;
+    overflow: hidden;
+
     @include media-breakpoint-up(lg) {
         padding: 60px 0 150px 0;
 
     }
+
     &__header {
         margin-bottom: 20px;
+
         @include media-breakpoint-up(lg) {
             margin-bottom: 70px;
 
@@ -21,59 +25,85 @@
 
     }
 
-    &__para {
+
+    &__para1 {
         max-width: 594px;
+        font-size: 15px;
+        line-height: 15px;
+        color: $off-grey;
+        font-family: $Work-Sans;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 20px;
+            line-height: 40px;
+        }
     }
 
-    .about-img-col {
-        width: max-content;
-        margin: 20px auto;
+    &__para2 {
+        max-width: 594px;
+
+    }
+
+
+    &__content {
+        .about-img-col {
+            width: 475px;
+            margin: 40px 0;
+
+            @include media-breakpoint-up(lg) {
+                width: auto;
+
+            }
+        }
+
     }
 
     &__box {
-        position: relative;
-
-        &:before {
-            display: none;
-            @include media-breakpoint-up(lg) {
-                content: "";
-                width: 100px;
-                height: 435px;
-                background-color: $off-white;
-                z-index: -1;
-                left: -10px;
-                top: -50px;
-                position: absolute;
-            }
-        }
-
-        &:after {
-            display: none;
-        @include media-breakpoint-up(lg) {
-            display: block;
-            content: "";
-            position: absolute;
-            top: -30px;
-            width: 185px;
-            height: 290px;
-            border-left: 90px solid $turquoise;
-            border-bottom: 70px solid $turquoise;
-            right: -130px;
-            z-index: -1;
-        }
-              
-            }
-
-
         picture {
+            position: relative;
             max-width: 100%;
+
+
+            &:before {
+                display: none;
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    content: "";
+                    width: 100px;
+                    height: 435px;
+                    background-color: $off-white;
+                    z-index: -1;
+                    left: -10px;
+                    top: -50px;
+                    position: absolute;
+                }
+            }
+
+
+            &:after {
+                display: none;
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    width: 185px;
+                    height: 290px;
+                    border-left: 90px solid $turquoise;
+                    border-bottom: 70px solid $turquoise;
+                    right: -120px;
+                    z-index: -1;
+
+                }
+            }
 
             img {
                 width: 300px;
-                height: 330px;
+
             }
         }
     }
 
 }
-

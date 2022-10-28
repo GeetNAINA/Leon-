@@ -1,5 +1,6 @@
 .work {
     padding: 0 0 60px;
+    overflow: hidden;
 
     &__container {
         &:hover {
@@ -25,7 +26,7 @@
 
     &__desc {
         font-size: 15px;
-        line-height: 30px;
+        line-height: 32px;
         font-weight: $regular;
     }
 }
