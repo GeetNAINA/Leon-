@@ -18,51 +18,51 @@
         <div class="container header__container">
             <div class="header__content">
                 <div class="d-flex justify-content-between align-items-center">
-
                     <div class="header__logo">
                         <img src="dist/images/logo.png">
                     </div>
 
-                    <div class="header__bar" onclick="openNav()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                    <div class="header__bar">
+                        <input id="menu__toggle" type="checkbox"/>
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                          </label>
+                          <nav class="nav" >
+                            <div class="container">
+                                <div class="nav__content">
+                                    <ul class="nav__list caps">
+                                        <div class="menu">
+                                            <h4 class="nav__heading">Menu</h4>
+                                            <li><a href="#" class="nav__link  active">Home</a></li>
+                                            <li><a href="#" class="nav__link">Services</a></li>
+                                            <li><a href="#" class="nav__link">Portfolio</a></li>
+                                            <li><a href="#" class="nav__link">About</a></li>
+                                        </div>
+                
+                                        <div class="touch">
+                                            <h4 class="nav__heading">Get in Touch</h4>
+                                            <li><a href="#" class="nav__link1">Contact Me</a></li>
+                                        </div>
+                
+                                        <div class="social">
+                                            <h4 class="nav__heading">get Social</h4>
+                                            <li><a href="#" class="nav__link1">Behance</a></li>
+                                            <li><a href="#" class="nav__link1">Dribble</a></li>
+                                            <li><a href="#" class="nav__link1">Twitter</a></li>
+                                        </div>
+                
+                                    </ul>
+                                    <h5 class="nav__copyright"> &copy; Leon 2019</h5>
+                
+                                </div>
+                            </div>
+                        </nav>
                     </div>
 
                 </div>
             </div>
         </div>
-        <nav class="nav">
-            <div class="container">
-                <div class="nav__content">
-                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-                    <ul class="nav__list caps">
-                        <div class="menu">
-                            <h4 class="nav__heading">Menu</h4>
-                            <li><a href="#" class="nav__link  active">Home</a></li>
-                            <li><a href="#" class="nav__link">Services</a></li>
-                            <li><a href="#" class="nav__link">Portfolio</a></li>
-                            <li><a href="#" class="nav__link">About</a></li>
-                        </div>
-
-                        <div class="touch">
-                            <h4 class="nav__heading">Get in Touch</h4>
-                            <li><a href="#" class="nav__link1">Contact Me</a></li>
-                        </div>
-
-                        <div class="social">
-                            <h4 class="nav__heading">get Social</h4>
-                            <li><a href="#" class="nav__link1">Behance</a></li>
-                            <li><a href="#" class="nav__link1">Dribble</a></li>
-                            <li><a href="#" class="nav__link1">Twitter</a></li>
-                        </div>
-
-                    </ul>
-                    <h5 class="nav__copyright"> &copy; Leon 2019</h5>
-
-                </div>
-            </div>
-        </nav>
+    
     </header>
     <!-- Ending Navigation -->
 
@@ -73,15 +73,13 @@
             <picture>
                 <img src="https://placeimg.com/1000/550/any" alt="img">
             </picture>
-
-            <div class="container">
+            <div class="container banner__container">
                 <div class="banner__content animated wow bounceInDown" data-wow-delay="1s">
                     <h2 class="banner__title">Hello There!</h2>
                     <p class="banner__desc font-style">We are Leon - Super Creative & Minimal
                         <br> Web Template 
                 </div>
             </div>
-
         </section>
         <!-- End banner Section-->
 
@@ -205,11 +203,17 @@
                         <div class="col-lg-4 col-sm-12 service-img-col">
                             <div class="service__box">
                                 <picture>
+                                    <source media="(min-width: 992px)" alt="img" srcset="https://placeimg.com/300/330/any" width="300" height="330">
+                                    <source media="(min-width: 768px) and (max-width: 991px)" alt="img" srcset="https://placeimg.com/318/350/any" width="318" height="350"> 
+                                    <source media="(max-width: 767px)" alt="img" srcset="https://placeimg.com/498/548/any" width="498" height="548"> 
+                                    <img src="https://placeimg.com/498/548/any" alt="Project Picture 1" width="498" height="548">
+                                </picture>
+                                <!-- <picture>
                                     <source media="(max-width: 575px)" alt="img" srcset="https://placeimg.com/238/262/any">
                                     <source media="(min-width: 576px) and (max-width: 767px)" alt="img" srcset="https://placeimg.com/498/548/any">
-                                    <source media="(min-width: 768px) and (max-width: 991px)" alt="img_1" srcset="https://placeimg.com/318/350/any">
+                                    <source media="(min-width: 768px) and (max-width: 991px)" alt="img" srcset="https://placeimg.com/318/350/any">
                                     <img src="https://placeimg.com/300/330/any" alt="img">
-                                </picture>
+                                </picture> -->
                             </div>
                         </div>
 
@@ -369,13 +373,13 @@
                 </div>
                 <div class="about__content animated wow slideInRight" data-wow-delay="1s">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-12 about-img-col">
+                        <div class="col-lg-4 col-sm-12">
                             <div class="about__box">
                                 <picture>
-                                    <source media="(max-width: 575px)" alt="img" srcset="https://placeimg.com/238/262/any">
-                                    <source media="(min-width: 576px) and (max-width: 767px)" alt="img" srcset="https://placeimg.com/498/548/any">
-                                    <source media="(min-width: 768px) and (max-width: 991px)" alt="img_1" srcset="https://placeimg.com/318/350/any">
-                                    <img src="https://placeimg.com/300/330/any" alt="Project Picture 1">
+                                    <source media="(min-width: 992px)" alt="img" srcset="https://placeimg.com/300/330/any" width="300" height="330">
+                                    <source media="(min-width: 768px) and (max-width: 991px)" alt="img" srcset="https://placeimg.com/318/350/any" width="318" height="350"> 
+                                    <source media="(max-width: 767px)" alt="img" srcset="https://placeimg.com/498/548/any" width="498" height="548"> 
+                                    <img src="https://placeimg.com/498/548/any" alt="Project Picture 1" width="498" height="548">
                                 </picture>
                             </div>
                         </div>
@@ -412,7 +416,9 @@
                 <div class="contact__content animated wow slideInRight" data-wow-delay="1s">
                     <div class="contact__info">
                         <p class="contact__info__title">Feel free to drop us a line at:</p>
-                        <a href="#" class="contact__info__email">leonagency@mail.com</a>
+                        <div class="contact__email">
+                        <a href="#" class="contact__info__email">leonagency@mail.com</a>               
+                    </div>
                     </div>
                     <div class="contact__social">
                         <span class="contact__social__title">Find us on social networks: </span>

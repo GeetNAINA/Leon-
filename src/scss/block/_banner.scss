@@ -20,7 +20,7 @@
         }
     }
 
-    .container {
+    &__container {
         position: absolute;
         top: 100px;
         left: 50%;
@@ -30,8 +30,8 @@
             top: 275px;
 
         }
-
     }
+
 
     &__content {
         text-align: center;

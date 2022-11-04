@@ -215,10 +215,6 @@ label {
   width: 22px;
   height: 22px;
   border: 1px solid $black;
-
-  @include media-breakpoint-up(lg) {
-  }
-
 }
 
 [type="radio"]:not(:checked)~label:before,

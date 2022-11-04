@@ -3,15 +3,15 @@
 // }
 
 
-$(document).ready(function () {
-  $(".header__bar").click(function () {
-    $("body").toggleClass("showing");
-  });
+// $(document).ready(function () {
+//   $(".header__bar").click(function () {
+//     $("body").toggleClass("showing");
+//   });
 
-  $(".closebtn").click(function () {
-    $("body").removeClass("showing");
-  });
- });
+//   $(".closebtn").click(function () {
+//     $("body").removeClass("showing");
+//   });
+//  });
 
 // $(document).ready(function () {
 //   $(".header__bar").click(function () {
